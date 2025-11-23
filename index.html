@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special HomeBaked Cookies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff7ef;
+    }
+
+    /* HEADER */
+    #header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+
+    #header-img {
+      width: 60px;
+    }
+
+    #nav-bar {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #633b1b;
+      font-weight: bold;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 100px 20px;
+    }
+
+    #about {
+      background: #ffe8d6;
+    }
+
+    #menu {
+      background: #f9dac6;
+    }
+
+    #contact {
+      background: #eec9b7;
+    }
+
+    /* VIDEO */
+    #video {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+    /* FORM */
+    #form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    #email {
+      padding: 10px;
+      border: 1px solid #c49a7e;
+      border-radius: 5px;
+    }
+
+    #submit {
+      padding: 10px;
+      background: #633b1b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* MEDIA QUERY */
+    @media (max-width: 600px) {
+      #nav-bar {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Cookie_icon.png" alt="Cookie Logo" />
+
+    <nav id="nav-bar">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#menu">Menu</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h1>Special HomeBaked Cookies</h1>
+    <p>Fresh, handcrafted cookies baked with love and the finest ingredients. Taste the difference!</p>
+  </section>
+
+  <section id="menu">
+    <h2>Our Best Cookies</h2>
+    <iframe
+      id="video"
+      src="https://www.youtube.com/embed/1APwq1df6Mw"
+      title="Cookie Making Video"
+      allowfullscreen
+    ></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>Get Cookie Promos!</h2>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+      <input id="submit" type="submit" value="Subscribe" />
+    </form>
+  </section>
+
+</body>
+</html>
